@@ -1,0 +1,21 @@
+.wrap_about {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 15px;
+max-width: 100%;
+width: 50%;
+height: 80vh;
+margin: 50px auto ;
+}
+
+.wrap_about h3 {
+font-size: 1.9rem;
+}
+
+.wrap_about p {
+line-height: 1.9;
+text-align: center;
+color: grey;
+}

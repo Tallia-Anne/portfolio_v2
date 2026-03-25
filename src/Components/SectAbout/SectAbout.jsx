@@ -1,0 +1,25 @@
+
+import aboutCss from '../SectAbout/SectAbout.module.css'
+
+function SectAbout() {
+  return (
+    <div className={aboutCss.wrap_about}>
+            <h3>"Bienvenue sur mon portfolio"</h3>
+            <p>Je suis une développeuse web junior depuis 2 ans.
+            Diplômé du titre professionnel de Développeur web et
+             web mobile du bac +2. Je vous souhaite bienvenue sur mon portfolio ! 
+            Pour vous raconter mon histoire et mon parcours. Cela va vous montrer la
+            passion dans le monde du développement web. Avec une citation : "La créativité 
+            est une fleur si délicate que, bien que les compliments la fassent s'épanouir, 
+            le découragement peut l'empêcher de fleurir." Qui vient Alex Osborn.Vous allez 
+            explorer mon monde rempli de créativité et d'imagination. Je vous invite à y 
+            découvrir les projets, dont les sites web, les projets design. Aussi me découvrir
+             la programmeuse web que je suis. Vous pouvez me faire confiance.</p>
+
+           
+
+</div>
+  )
+}
+
+export default SectAbout

@@ -1,0 +1,38 @@
+.cardprojet_wrapper {
+width: 350px;
+height: 580px;
+background-color: rgb(56, 55, 55);
+display: flex;
+flex-direction: column;
+margin: 12px 12px;
+}
+
+.cardprojet_wrapper  .cardprojet_image {
+width: 350px;
+height: 300px;
+}
+
+.cardprojet_wrapper  .cardprojet_image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+object-position: center;
+}
+
+.cardprojet_wrapper .content {
+padding: 22px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: start;
+gap: 32px;
+
+}
+
+.cardprojet_wrapper .content h6 {
+font-size: 16px;
+}
+
+.cardprojet_wrapper .content h6 , p {
+color: white;
+}

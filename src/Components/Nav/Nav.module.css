@@ -1,0 +1,183 @@
+.nav_wrapper {
+
+height: 80px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 0 12%;
+position: fixed;
+top: 0;
+z-index: 9999;
+border-bottom: 0.5px solid rgba(255, 255, 255, 0.2);
+
+}
+
+.nav_wrapper::after , .nav_wrapper::before {
+content: '';
+position: absolute;
+top: 0;
+height: 100%;
+width: 1px;
+background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nav_wrapper::after {
+right: 30%;
+}
+
+.nav_wrapper::before {
+left: 25%;
+}
+
+.nav_wrapper .logo a .nav_wrapper .logo i {
+
+font-size: 289px;
+margin-left: 5px;
+color: white;
+}
+.nav_wrapper .logo a, i {
+color: white;
+text-decoration: none;
+}
+
+.nav_wrapper ul li {
+display: inline-block;
+margin: 0 12px;
+}
+
+.nav_wrapper ul li a {
+
+color: white;
+text-decoration: none;
+
+}
+
+.nav_wrapper ul li:hover a {
+
+color: white;
+
+}
+
+.Nav_btns {
+
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.Nav_btns .social {
+
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.Nav_btns .social i {
+color: #fff;
+}
+
+.Nav_btns i {
+
+
+font-size: 16px;
+cursor: pointer;
+
+}
+
+.Nav_btns #bars {
+height: 40px;
+width: 40px;
+
+font-size: 16px;
+
+display: none;
+
+align-items: center;
+justify-content: center;
+border: 1px solid rgba(0, 0, 0, 1);
+
+background-color: rgba(0, 0, 0, 1);
+color: #fff;
+
+transition: .6s;
+
+box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+
+}
+
+
+.Nav_btns #bars:hover {
+background-color: #fff;
+color: rgba(0, 0, 0, 0.2);
+
+}
+
+
+@media screen and (max-width: 900px) {
+
+.Nav_btns #bars {
+display: flex;
+}
+.nav_wrapper ul {
+
+position : absolute;
+top: 100%;
+left: 0;
+width: 100%;
+background-color: #353131;
+transition: .6s;
+display: none;
+}
+
+
+.nav_wrapper ul li {
+
+display: block;
+padding: 25px 0;
+padding-left: 12%;
+border-bottom: 0.5px solid rgba(0,0,0,0.2);
+
+
+
+}
+
+.nav_wrapper::after {
+right: 30%;
+}
+
+.nav_wrapper::before {
+right: 32%;
+}
+
+.nav_wrapper .ShowMenu {
+display: block;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+.nav_wrapper::after {
+right: 30%;
+}
+
+.nav_wrapper::before {
+right: 35%;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+.nav_wrapper::after {
+right: 50%;
+}
+
+.nav_wrapper::before {
+display: none;
+}
+
+}

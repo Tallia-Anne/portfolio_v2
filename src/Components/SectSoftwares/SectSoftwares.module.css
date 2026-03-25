@@ -1,0 +1,56 @@
+.softWare_container {
+  width: 100%;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section_title {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.icons_wrapper {
+  display: grid;
+  /* Crée 3 colonnes égales (tu peux mettre 4 si tu préfères) */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 40px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.icon_item {
+  display: flex;
+  flex-direction: row; /* Image à gauche, texte à droite */
+  align-items: center;
+  gap: 15px;
+}
+
+.text_wrapper {
+  display: flex;
+  flex-direction: column; /* "Adobe" au dessus de "Photoshop" */
+}
+
+.brand {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #444;
+}
+
+.software {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* Version Mobile : 1 seule colonne */
+@media (max-width: 600px) {
+  .icons_wrapper {
+    grid-template-columns: 1fr;
+    padding-left: 20%; /* Pour centrer visuellement */
+  }
+}
