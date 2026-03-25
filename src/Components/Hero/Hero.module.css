@@ -43,3 +43,12 @@ height: 120vh;
     text-shadow: none; /* Le néon s'éteint brièvement */
   }
 }
+
+@media  screen and (max-width: 900px) {
+
+.hero_title  {
+  font-size: 1.5rem;
+}
+
+
+}

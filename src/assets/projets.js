@@ -1,16 +1,18 @@
 import uniscit from '../assets/images/uniscit.JPG';
-import freshcomesty_img from '../assets/images/imgi_4_commerce.f94418b8f0350134114d.png'
-import youtubemusic_img from '../assets/images/imgi_3_mockup.338390c1c73549c91e01.jpg'
-import harrypotter_img from '../assets/images/imgi_9_harryordi.512dca28f128a44cf0a2.jpg'
-import dyslogie_img from '../assets/images/imgi_14_dyslogieweb.4d2dd205d34d5e4b0053.jpg'
-import ancien_portfolio_img from '../assets/images/herohome.jpg'
-import digital_school_img from '../assets/images/imgi_13_c61e94119064397.6095907157344.5e8c1a162e6b7b03aa36.jpg'
-import dice_roller_img from '../assets/images/imgi_24_ezgif.com-video-to-gif.0f8f85ca3da7f2e29cc5.gif'
-import sois_verite_img from '../assets/images/imgi_11_mockupsoisverite.efedc666a70b083d4303.jpg'
-import rize_img from '../assets/images/imgi_25_default.png'
-import quiz_react_img from '../assets/images/imgi_17_manga.78330f452d1435392523.jpg'
-import ecommerce_mode_figma_img from '../assets/images/imgi_21_14figmag2r.4f6e5eef0eba29197ce0.jpg'
-import stranger_things_maquette_img from '../assets/images/imgi_7_strangerthings.fe4f7a85323cb24fb5e5.jpg'
+import freshcomesty_img from '../assets/images/imgi_4_commerce.f94418b8f0350134114d.png';
+import youtubemusic_img from '../assets/images/imgi_3_mockup.338390c1c73549c91e01.jpg';
+import harrypotter_img from '../assets/images/imgi_9_harryordi.512dca28f128a44cf0a2.jpg';
+import dyslogie_img from '../assets/images/imgi_14_dyslogieweb.4d2dd205d34d5e4b0053.jpg';
+import ancien_portfolio_img from '../assets/images/herohome.jpg';
+import digital_school_img from '../assets/images/imgi_13_c61e94119064397.6095907157344.5e8c1a162e6b7b03aa36.jpg';
+import dice_roller_img from '../assets/images/imgi_24_ezgif.com-video-to-gif.0f8f85ca3da7f2e29cc5.gif';
+import sois_verite_img from '../assets/images/imgi_11_mockupsoisverite.efedc666a70b083d4303.jpg';
+import rize_img from '../assets/images/imgi_25_default.png';
+import quiz_react_img from '../assets/images/imgi_17_manga.78330f452d1435392523.jpg';
+import ecommerce_mode_figma_img from '../assets/images/imgi_21_14figmag2r.4f6e5eef0eba29197ce0.jpg';
+import stranger_things_maquette_img from '../assets/images/imgi_7_strangerthings.fe4f7a85323cb24fb5e5.jpg';
+import narratix_mockup_img from '../assets/images/Screen_Recording_20230904_202618_Expo Go.mp4'
+
 
 const projets = [
     {
@@ -233,6 +235,23 @@ const projets = [
 
         description: "Ce projet de design d'interface (UI) pour une plateforme de streaming Stranger Things met l'accent sur l'immersion et la narration visuelle. En utilisant **Figma**, j'ai structuré le contenu pour que chaque élément de design (boutons, cartes, bannières) contribue à l'ambiance globale. J'ai porté une attention particulière à la fiche personnage, conçue comme une encyclopédie interactive avec des informations détaillées, des extraits vidéo et des liens vers les chapitres où ils apparaissent. Le prototype interactif simule le parcours complet, de la découverte d'un personnage jusqu'à la lecture d'un épisode. C'est une réalisation qui démontre ma capacité à concevoir des interfaces thématiques riches, ma maîtrise du design centré sur l'utilisateur et ma rigueur dans la création de composants design réutilisables, essentiels pour le développement front-end.",
     },
+        {
+    id: 14,
+    title: "Narratix : Réseau Social d'Histoires & Back-Office Admin",
+    image: narratix_mockup_img, // Importe une image montrant l'app mobile ET l'écran admin
+    year: 2024,
+    category: "Full-Stack", // Une nouvelle catégorie pour marquer le coup !
+    introduction: "Narratix est un écosystème complet comprenant une application mobile de partage d'histoires (**React Native**) et une plateforme de gestion administrative (**React.js**). Ce projet explore la création de réseaux sociaux modernes et la gestion de données à grande échelle.",
+
+    objectifs: [
+        "Développer une application mobile fluide pour la lecture et l'écriture d'histoires avec **React Native**.",
+        "Créer un tableau de bord administrateur sur ordinateur pour modérer les contenus et gérer les utilisateurs.",
+        "Mettre en place un système de notifications en temps réel et de fil d'actualité dynamique.",
+        "Concevoir une architecture de base de données robuste pour lier l'application mobile et l'interface admin."
+    ],
+
+    description: "Narratix est mon projet le plus ambitieux. Côté utilisateur, j'ai utilisé **React Native** pour offrir une expérience mobile intuitive, permettant aux auteurs de publier leurs récits en quelques clics. Côté gestion, j'ai développé une application de bureau (Desktop-ready) avec **React.js**, **HTML5** et **CSS3**, offrant aux administrateurs une vue d'ensemble sur les statistiques et les outils de modération. Ce double projet démontre ma capacité à concevoir des systèmes interconnectés complexes, à gérer des flux de données bidirectionnels et à adapter l'interface (UI) selon que l'utilisateur soit un lecteur sur mobile ou un gestionnaire sur ordinateur."
+},
 ];
 
 

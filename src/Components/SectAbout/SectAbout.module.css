@@ -19,3 +19,8 @@ line-height: 1.9;
 text-align: center;
 color: grey;
 }
+@media screen and (max-width: 900px) {
+.wrap_about {
+height: 182vh;
+}
+}
