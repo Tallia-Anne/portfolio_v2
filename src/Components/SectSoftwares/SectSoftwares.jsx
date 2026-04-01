@@ -1,65 +1,72 @@
-import softwaresCss from '../SectSoftwares/SectSoftwares.module.css'
+import softwaresCss from "../SectSoftwares/SectSoftwares.module.css";
 
 function SectSoftwares() {
-  // On utilise un style commun pour toutes les images
-  const iconStyle = { filter: 'grayscale(1) opacity(0.7)', width: '50px' };
+  const iconStyle = { filter: "grayscale(1) opacity(0.7)", width: "50px" };
+
+  const skills = [
+    { name: "Canva", brand: "Canva", icon: "canva" },
+    {
+      name: "Photoshop",
+      brand: "Adobe",
+      software: "Photoshop",
+      icon: "adobe-photoshop",
+    },
+    { name: "WordPress", brand: "WordPress", icon: "wordpress" },
+    {
+      name: "Elementor",
+      brand: "Elementor",
+      software: "Web Builder",
+      icon: "elementor",
+    },
+    { name: "Figma", brand: "Figma", icon: "figma" },
+    {
+      name: "React",
+      brand: "React",
+      software: "JS Library",
+      icon: "react-native",
+    },
+    { name: "JavaScript", brand: "JavaScript", icon: "javascript" },
+    {
+      name: "Bootstrap",
+      brand: "Bootstrap",
+      software: "CSS Framework",
+      icon: "bootstrap",
+    },
+    {
+      name: "GitHub",
+      brand: "GitHub",
+      software: "Version Control",
+      icon: "github",
+    },
+    { name: "Vercel", brand: "Vercel", software: "Deployment", icon: "vercel" },
+    {
+      name: "Postman",
+      brand: "Postman",
+      software: "API Testing",
+      icon: "postman--v1",
+    },
+  ];
 
   return (
     <div className={softwaresCss.softWare_container}>
       <h3 className={softwaresCss.section_title}>Softwares I've worked on</h3>
-      
+
       <div className={softwaresCss.icons_wrapper}>
-        
-        {/* CANVA */}
-        <div className={softwaresCss.icon_item}>
-          <img src="https://img.icons8.com/ios-filled/100/canva.png" style={iconStyle} alt="Canva" />
-          <div className={softwaresCss.text_wrapper}>
-            <span className={softwaresCss.brand}>Canva</span>
+        {skills.map((skill, index) => (
+          <div key={index} className={softwaresCss.icon_item}>
+            <img
+              src={`https://img.icons8.com/ios-filled/100/${skill.icon}.png`}
+              style={iconStyle}
+              alt={skill.name}
+            />
+            <div className={softwaresCss.text_wrapper}>
+              <span className={softwaresCss.brand}>{skill.brand}</span>
+              {skill.software && (
+                <span className={softwaresCss.software}>{skill.software}</span>
+              )}
+            </div>
           </div>
-        </div>
-
-        {/* PHOTOSHOP */}
-        <div className={softwaresCss.icon_item}>
-          <img src="https://img.icons8.com/ios-filled/100/adobe-photoshop.png" style={iconStyle} alt="Photoshop" />
-          <div className={softwaresCss.text_wrapper}>
-            <span className={softwaresCss.brand}>Adobe</span>
-            <span className={softwaresCss.software}>Photoshop</span>
-          </div>
-        </div>
-
-        {/* WORDPRESS */}
-        <div className={softwaresCss.icon_item}>
-          <img src="https://img.icons8.com/ios-filled/100/wordpress.png" style={iconStyle} alt="WordPress" />
-          <div className={softwaresCss.text_wrapper}>
-            <span className={softwaresCss.brand}>WordPress</span>
-          </div>
-        </div>
-
-        {/* FIGMA */}
-        <div className={softwaresCss.icon_item}>
-          <img src="https://img.icons8.com/ios-filled/100/figma.png" style={iconStyle} alt="Figma" />
-          <div className={softwaresCss.text_wrapper}>
-            <span className={softwaresCss.brand}>Figma</span>
-          </div>
-        </div>
-
-        {/* REACT */}
-        <div className={softwaresCss.icon_item}>
-          <img src="https://img.icons8.com/ios-filled/100/react-native.png" style={iconStyle} alt="React" />
-          <div className={softwaresCss.text_wrapper}>
-            <span className={softwaresCss.brand}>React</span>
-            <span className={softwaresCss.software}>JS Library</span>
-          </div>
-        </div>
-
-        {/* JS */}
-        <div className={softwaresCss.icon_item}>
-          <img src="https://img.icons8.com/ios-filled/100/javascript.png" style={iconStyle} alt="JS" />
-          <div className={softwaresCss.text_wrapper}>
-            <span className={softwaresCss.brand}>JavaScript</span>
-          </div>
-        </div>
-
+        ))}
       </div>
     </div>
   );

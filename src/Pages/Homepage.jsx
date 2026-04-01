@@ -12,7 +12,6 @@ function Homepage() {
       <Hero 
         title="Développeuse Web" 
         image={bgHome} 
-        
       />
       
       <SectAbout/>

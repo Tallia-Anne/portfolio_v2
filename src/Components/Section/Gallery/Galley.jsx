@@ -9,11 +9,10 @@ import Buttons from '../../Buttons/Buttons';
 function Galley() {
   return (
     <div className={`${galleryCss.project_wrapper} section`}>
-      <h2>Atelier numérique</h2>
+      <h2>Projets numériques</h2>
       <p className={galleryCss.paragraph}>
-        Permet d'apprendre les bases du numérique, de la sécurité en ligne au
-        codage, tout en favorisant l'inclusion et l'autonomie dans un monde
-        digital.
+        Explorez un éventail de mes créations, chacune racontant une histoire
+        unique et représentant mon savoir-faire artistique.
       </p>
       <div className={galleryCss.projectCards}>
         <div className={galleryCss.projectCard}>
@@ -31,10 +30,10 @@ function Galley() {
         <div className={galleryCss.projectCard}>
           <img src={projectImg2} alt="" />
           <div className={galleryCss.Content}>
-            <h3>Découverte de Scratch</h3>
+            <h3>Youtube music</h3>
             <p>
-              Cet atelier initie aux bases de Scratch pour créer des projets
-              interactifs.
+              Ce projet explore une refonte complète de l'interface mobile de
+              YouTube Music.
             </p>
           </div>
         </div>
@@ -42,10 +41,10 @@ function Galley() {
         <div className={galleryCss.projectCard}>
           <img src={projectImg3} alt="" />
           <div className={galleryCss.Content}>
-            <h3>Lamb: Jam Session Intro</h3>
+            <h3>FreshComesty</h3>
             <p>
-              Cet atelier permet de créer de la musique et est conçu pour
-              l'initiation au code.
+              FreshComesty est une plateforme de vente en ligne dédiée à la
+              cosmétique haut de gamme.
             </p>
           </div>
         </div>
@@ -54,18 +53,16 @@ function Galley() {
           <img src={projectImg4} alt="" />
 
           <div className={galleryCss.Content}>
-            <h3>Atelier sur la cyberharcelement sur la discrimination</h3>
+            <h3>Inhouse</h3>
             <p>
-              {" "}
-              Apprendre c'est quoi la cyberharcelement concernant la
-              discrimination
+              Développement d'une plateforme e-commerce dédiée aux objets
+              connectés.
             </p>
           </div>
         </div>
       </div>
 
       <div className={galleryCss.Project_all_button}>
-       
         <Buttons name="Tous les ateliers" lien="/projets" />
       </div>
     </div>

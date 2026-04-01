@@ -28,7 +28,7 @@ return (
 
     <div className={footerCSS.Footer_copyright}>
 
-    <p>Copyright &copy; 2024 Tallia-Anne Wambiekele  All Rights Reserved.</p>
+    <p>Copyright &copy; 2026 Tallia-Anne Wambiekele  All Rights Reserved.</p>
 
     </div>
 

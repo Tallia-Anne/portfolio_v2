@@ -47,6 +47,19 @@
   color: #888;
 }
 
+.icon_item img {
+  width: 50px;
+  filter: grayscale(1);
+  opacity: 0.7;
+  transition: all 0.3s ease; /* Petit bonus pour une animation fluide */
+}
+
+/* Optionnel : l'icône reprend ses couleurs quand on passe la souris dessus */
+.icon_item:hover img {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
 /* Version Mobile : 1 seule colonne */
 @media (max-width: 600px) {
   .icons_wrapper {

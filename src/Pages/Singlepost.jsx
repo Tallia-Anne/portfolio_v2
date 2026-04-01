@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import projets from "../assets/projets";
 import singlepostCSS from "./Singlepost.module.css"; 
-
+import Buttons from "../Components/Buttons/Buttons";
 function SinglePost() {
   // 1. Récupération de l'ID depuis l'URL
   const { id } = useParams();
@@ -68,7 +68,7 @@ function SinglePost() {
         <div className={singlepostCSS.viewprojet}>
           <h4>Derniers projets</h4>
           <Link to="/projets">
-            <button className={singlepostCSS.btnAll}>Tous les projets</button>
+            <Buttons name="Tous les ateliers" lien="/projets" />
           </Link>
         </div>
 

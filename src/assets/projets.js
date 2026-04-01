@@ -12,6 +12,8 @@ import quiz_react_img from '../assets/images/imgi_17_manga.78330f452d1435392523.
 import ecommerce_mode_figma_img from '../assets/images/imgi_21_14figmag2r.4f6e5eef0eba29197ce0.jpg';
 import stranger_things_maquette_img from '../assets/images/imgi_7_strangerthings.fe4f7a85323cb24fb5e5.jpg';
 import narratix_mockup_img from '../assets/images/Screen_Recording_20230904_202618_Expo Go.mp4'
+import foodnow_figma_mockup_img from '../assets/images/Mockup 4.jpg';
+import inhouse_img from "../assets/images/imgi_5_inhouse.fc5ec438a620d7a95692.png";
 
 
 const projets = [
@@ -251,7 +253,42 @@ const projets = [
     ],
 
     description: "Narratix est mon projet le plus ambitieux. Côté utilisateur, j'ai utilisé **React Native** pour offrir une expérience mobile intuitive, permettant aux auteurs de publier leurs récits en quelques clics. Côté gestion, j'ai développé une application de bureau (Desktop-ready) avec **React.js**, **HTML5** et **CSS3**, offrant aux administrateurs une vue d'ensemble sur les statistiques et les outils de modération. Ce double projet démontre ma capacité à concevoir des systèmes interconnectés complexes, à gérer des flux de données bidirectionnels et à adapter l'interface (UI) selon que l'utilisateur soit un lecteur sur mobile ou un gestionnaire sur ordinateur."
-},
+    },
+        {
+    id: 15, // ID unique pour ce nouveau projet
+    title: "FoodNow : Design d'Application de Livraison de Repas (Figma)",
+    image: foodnow_figma_mockup_img, // N'oublie pas l'import de ton image de maquette !
+    year: 2024,
+    category: "Design", // Catégorie Design UI/UX
+    introduction: "Conçue intégralement sur **Figma**, FoodNow est une maquette haute fidélité pour une application mobile de commande et de livraison de repas. L'objectif était de simplifier le parcours utilisateur, de la découverte de restaurants locaux à la validation de la commande, en passant par la personnalisation des plats.",
+
+    objectifs: [
+        "Réaliser une recherche utilisateur (UX Research) pour identifier les points de friction dans les applications de livraison existantes.",
+        "Concevoir une interface utilisateur (UI) épurée et appétissante sur **Figma**, optimisée pour une utilisation à une main.",
+        "Créer un prototype interactif complet pour simuler le flux de commande, y compris la gestion du panier et le suivi de livraison.",
+        "Élaborer un Design System cohérent (iconographie culinaire, palette de couleurs dynamiques, composants réutilisables)."
+    ],
+
+    description: "Le projet FoodNow se concentre sur une expérience utilisateur fluide et intuitive. En utilisant **Figma**, j'ai structuré l'application autour d'une recherche puissante et de filtres affinés (type de cuisine, temps de livraison, régimes alimentaires). La fiche restaurant met en valeur les plats avec de grands visuels, tandis que le processus de paiement a été simplifié pour réduire le taux d'abandon. Le prototype interactif permet de tester la navigation réelle, du choix du plat jusqu'à l'écran de confirmation. Cette réalisation démontre ma maîtrise du design mobile centré sur l'utilisateur, ma capacité à hiérarchiser des informations denses et ma rigueur dans la création de composants design réutilisables, essentiels pour le développement front-end.",
+    },
+        
+    {
+        id: 16, // ID unique pour ce nouveau projet
+        title: "Inhouse",
+        image: inhouse_img, // N'oublie pas l'import de ton image de maquette !
+        year: 2024,
+        category: "SiteWeb", // Catégorie Design UI/UX
+        introduction: "Ce projet est un site web e-commerce dédié aux **objets connectés**. Réalisé dans un cadre pédagogique, il simule une commande client réelle.",
+
+        objectifs: [
+            "Maîtriser l'intégration complète sous WordPress / Elementor.",
+            "Respecter scrupuleusement une charte graphique imposée.",
+            "Optimiser l'expérience utilisateur (UX) pour le catalogue.",
+            "Garantir un rendu 100% Responsive."
+        ],
+
+        description: "Le projet Inhouse se concentre sur la création d'une boutique en ligne moderne et épurée. J'ai dû paramétrer chaque section pour refléter l'aspect 'high-tech' des objets connectés.",
+    },
 ];
 
 
