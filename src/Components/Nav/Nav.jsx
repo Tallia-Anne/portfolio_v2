@@ -18,20 +18,35 @@ function Nav() {
       </div>
 
       <ul ref={menu}>
-        <li><Link to="/">Accueil</Link></li>
-       
-        <li><Link to="/projets">Projet</Link></li>
-        
+        <li>
+          <Link to="/">Accueil</Link>
+        </li>
+        <li>
+          <Link to="/propos">A propos</Link>
+        </li>
+        <li>
+          <Link to="/projets">Projet</Link>
+        </li>
       </ul>
 
       <div className={navCSS.Nav_btns}>
         <div className={navCSS.social}>
-          <a><i className="ri-facebook-circle-fill"></i></a>
-          <a href="https://www.instagram.com/uniscite95/"><i className="ri-instagram-fill"></i></a>
-          <a href=""><i className="ri-twitter-x-line"></i></a>
+          <a>
+            <i className="ri-facebook-circle-fill"></i>
+          </a>
+          <a href="https://www.instagram.com/uniscite95/">
+            <i className="ri-instagram-fill"></i>
+          </a>
+          <a href="">
+            <i className="ri-twitter-x-line"></i>
+          </a>
         </div>
 
-        <i className="ri-menu-4-line" id={navCSS.bars} onClick={menuHandler}></i>
+        <i
+          className="ri-menu-4-line"
+          id={navCSS.bars}
+          onClick={menuHandler}
+        ></i>
       </div>
     </div>
   );
