@@ -3,7 +3,7 @@ import freshcomesty_img from '../assets/images/imgi_4_commerce.f94418b8f03501341
 import youtubemusic_img from '../assets/images/imgi_3_mockup.338390c1c73549c91e01.jpg';
 import harrypotter_img from '../assets/images/imgi_9_harryordi.512dca28f128a44cf0a2.jpg';
 import dyslogie_img from '../assets/images/imgi_14_dyslogieweb.4d2dd205d34d5e4b0053.jpg';
-import ancien_portfolio_img from '../assets/images/herohome.jpg';
+import ancien_portfolio_img from '../assets/images/ScreenShot Tool -20260403152053.png';
 import digital_school_img from '../assets/images/imgi_13_c61e94119064397.6095907157344.5e8c1a162e6b7b03aa36.jpg';
 import dice_roller_img from '../assets/images/imgi_24_ezgif.com-video-to-gif.0f8f85ca3da7f2e29cc5.gif';
 import sois_verite_img from '../assets/images/imgi_11_mockupsoisverite.efedc666a70b083d4303.jpg';
