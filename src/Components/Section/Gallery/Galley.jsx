@@ -1,6 +1,6 @@
 import galleryCss from './Gallery.module.css'
 
-import projectImg1 from "../../../assets/images/imgi_2_myessentialsbg.b8285824ba62d182bd7e.jpg";
+import projectImg1 from "../../../assets/images/imgi_14_dyslogieweb.4d2dd205d34d5e4b0053.jpg";
 import projectImg2 from "../../../assets/images/imgi_3_mockup.338390c1c73549c91e01.jpg";
 import projectImg3 from "../../../assets/images/imgi_4_commerce.f94418b8f0350134114d.png";
 import projectImg4 from "../../../assets/images/imgi_5_inhouse.fc5ec438a620d7a95692.png";
@@ -19,10 +19,11 @@ function Galley() {
           <img src={projectImg1} alt="" />
 
           <div className={galleryCss.Content}>
-            <h3>Minecraft Adventurer</h3>
+            <h3>Dyslogie</h3>
             <p>
-              Cet atelier est un jeu inspiré de Minecraft Adventurer, conçu pour
-              initiation au code.
+              Développée avec **React.js**, Dyslogie est une plateforme
+              solidaire conçue pour orienter les personnes souffrant de troubles
+              de l'apprentissage
             </p>
           </div>
         </div>

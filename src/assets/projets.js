@@ -19,7 +19,7 @@ import inhouse_img from "../assets/images/imgi_5_inhouse.fc5ec438a620d7a95692.pn
 const projets = [
     {
         id: 1,
-        title: "Unis-Cité : Jeu de Plateau Interactif",
+        title: "Unis-Cité",
         image: uniscit,
         year: 2024,
         introduction: "Dans le cadre d'une mission de Service Civique, j'ai participé à la création d'un support pédagogique innovant : un jeu de plateau interactif. Ce projet vise à transformer l'apprentissage des valeurs citoyennes en une expérience ludique et immersive, capable de captiver un public jeune et de favoriser le dialogue.",
