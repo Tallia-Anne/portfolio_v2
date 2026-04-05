@@ -42,7 +42,7 @@ function SinglePost() {
       <div className={singlepostCSS.singleContent}>
         {/* Objectifs - On vérifie si le tableau existe avant de mapper */}
         <div className={singlepostCSS.SingleObj}>
-          <h4>Objectifs Pédagogiques:</h4>
+          <h4>La conception du projet:</h4>
           {projet.objectifs && projet.objectifs.length > 0 ? (
             <div className={singlepostCSS.objectiflist}>
               <ul>
