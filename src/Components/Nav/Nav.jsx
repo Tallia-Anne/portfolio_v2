@@ -34,7 +34,7 @@ function Nav() {
           <a>
             <i className="ri-facebook-circle-fill"></i>
           </a>
-          <a href="https://www.instagram.com/uniscite95/">
+          <a href="">
             <i className="ri-instagram-fill"></i>
           </a>
           <a href="">

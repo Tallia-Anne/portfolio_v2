@@ -2,6 +2,7 @@ import { useParams, Link } from "react-router-dom";
 import projets from "../assets/projets";
 import singlepostCSS from "./Singlepost.module.css"; 
 import Buttons from "../Components/Buttons/Buttons";
+import Card_techno from "../Components/Card_techno/Card_techno";
 function SinglePost() {
   // 1. Récupération de l'ID depuis l'URL
   const { id } = useParams();
@@ -60,6 +61,16 @@ function SinglePost() {
         <div className={singlepostCSS.SingleObj}>
           <h4>Description:</h4>
           <p className={singlepostCSS.descriptionText}>{projet.description}</p>
+        </div>
+
+        <div className={singlepostCSS.technoGrid}>
+          {projet.technos?.map(
+            (tech, index) =>
+              // On vérifie que 'tech' existe AVANT d'accéder à 'tech.name'
+              tech && (
+                <Card_techno key={index} name={tech.name} icon={tech.icon} />
+              ),
+          )}
         </div>
       </div>
 

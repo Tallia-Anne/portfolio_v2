@@ -1,3 +1,58 @@
+// On définit le style une seule fois
+export const iconStyle = { filter: "grayscale(1) opacity(0.7)", width: "50px" };
+
+
+const skills = [
+    { name: "Canva", brand: "Canva", icon: "canva" },
+    {
+        name: "Photoshop",
+        brand: "Adobe",
+        software: "Photoshop",
+        icon: "adobe-photoshop",
+    },
+    {
+        name: "WordPress",
+        brand: "WordPress",
+            icon: "wordpress"
+    },
+    {
+        name: "Elementor",
+        brand: "Elementor",
+        software: "Web Builder",
+        icon: "elementor",
+    },
+    { name: "Figma", brand: "Figma", icon: "figma" },
+    {
+        name: "React",
+        brand: "React",
+        software: "JS Library",
+        icon: "react-native",
+    },
+    { name: "JavaScript", brand: "JavaScript", icon: "javascript" },
+    {
+        name: "Bootstrap",
+        brand: "Bootstrap",
+        software: "CSS Framework",
+        icon: "bootstrap",
+    },
+    {
+        name: "GitHub",
+        brand: "GitHub",
+        software: "Version Control",
+        icon: "github",
+    },
+    { name: "Vercel", brand: "Vercel", software: "Deployment", icon: "vercel" },
+    {
+        name: "Postman",
+        brand: "Postman",
+        software: "API Testing",
+        icon: "postman--v1",
+    },
+];
+// techIcons.js
+
+
+
 import uniscit from '../assets/images/uniscit.JPG';
 import freshcomesty_img from '../assets/images/imgi_4_commerce.f94418b8f0350134114d.png';
 import youtubemusic_img from '../assets/images/imgi_3_mockup.338390c1c73549c91e01.jpg';
@@ -23,7 +78,7 @@ const projets = [
         image: uniscit,
         year: 2024,
         introduction: "Dans le cadre d'une mission de Service Civique, j'ai participé à la création d'un support pédagogique innovant : un jeu de plateau interactif. Ce projet vise à transformer l'apprentissage des valeurs citoyennes en une expérience ludique et immersive, capable de captiver un public jeune et de favoriser le dialogue.",
-
+        technos: [skills.react, skills.javascript, skills.figma],
         objectifs: [
             "Développer la cohésion d'équipe et la communication interpersonnelle.",
             "Sensibiliser aux enjeux de la citoyenneté et de la solidarité par le jeu.",
@@ -38,6 +93,7 @@ const projets = [
         title: "FreshComesty : E-commerce Cosmétique",
         image: freshcomesty_img, // Vérifie que tu as bien importé l'image en haut du fichier
         year: 2024,
+        technos: [skills.react, skills.javascript, skills.figma],
         introduction: "FreshComesty est une plateforme de vente en ligne dédiée à la cosmétique haut de gamme. Ce projet vise à offrir une expérience utilisateur fluide et élégante, permettant aux clients de découvrir et d'acquérir des produits de soin sélectionnés pour leur efficacité et leur composition naturelle.",
 
         objectifs: [
@@ -55,6 +111,7 @@ const projets = [
         image: youtubemusic_img, // N'oublie pas l'import de ton image mockup !
         year: 2024,
         category: "Design",
+        technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Ce projet explore une refonte complète de l'interface mobile de YouTube Music. L'objectif était de repenser l'ergonomie de l'application pour offrir une navigation plus intuitive et visuelle, tout en respectant l'identité forte de la marque Google et les besoins des mélomanes modernes.",
 
         objectifs: [
@@ -72,6 +129,7 @@ const projets = [
         image: harrypotter_img,
         year: 2024,
         category: "Site Web",
+        technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Ce projet est une plateforme immersive dédiée à l'univers d'Harry Potter, développée avec **React.js**. Conçu comme une bibliothèque numérique, le site permet aux fans de consulter une base de données complète sur les sortilèges et les ouvrages de la saga, tout en profitant d'un espace blog structuré.",
 
         objectifs: [
@@ -107,6 +165,7 @@ const projets = [
         image: ancien_portfolio_img, // Importe la capture d'écran de ton ancien site
         year: 2023,
         category: "Site Web",
+        technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Ce projet représente ma toute première vitrine professionnelle en ligne. Développé avec les bases fondamentales du web (**HTML5** et **CSS3**), ce portfolio avait pour mission de présenter mes premières créations graphiques et mes débuts en programmation.",
 
         objectifs: [
@@ -124,6 +183,7 @@ const projets = [
         image: digital_school_img, // N'oublie pas l'import de ton fichier Photoshop exporté en .jpg
         year: 2023,
         category: "Design",
+        technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Réalisé lors d'un stage chez **Digital School France**, ce projet consistait à concevoir l'interface utilisateur (UI) d'une plateforme d'emploi et de formation. L'enjeu était de créer une expérience fluide, inspirée des standards de **France Travail**, pour faciliter l'accès aux ressources numériques.",
 
         objectifs: [
@@ -141,6 +201,7 @@ const projets = [
         image: dice_roller_img, // Une capture d'écran du simulateur mobile ou d'un téléphone
         year: 2024,
         category: "Application Mobile", // Nouvelle catégorie !
+        technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Développée avec **React Native**, cette application mobile permet de simuler des lancés de dés avec une expérience utilisateur fluide et tactile. Ce projet m'a permis d'explorer le développement mobile natif et la gestion des composants spécifiques aux smartphones.",
 
         objectifs: [
@@ -158,6 +219,7 @@ const projets = [
         image: sois_verite_img, // N'oublie pas l'import de ton image mockup !
         year: 2023,
         category: "Site Web",
+        technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Conçu avec le CMS **WordPress**, ce blog est une plateforme dédiée à la cuisine saine et au partage de recettes inspirantes. L'objectif était de créer un espace visuel gourmand et apaisant, permettant une gestion simplifiée des articles tout en offrant une expérience de lecture optimale.",
 
         objectifs: [
@@ -175,6 +237,7 @@ const projets = [
         image: rize_img, // N'oublie pas l'import de ton image !
         year: 2024,
         category: "Site Web",
+        technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Propulsé par **WordPress** et conçu avec le constructeur de pages **Elementor**, Rize est une plateforme e-commerce dédiée aux équipements sportifs de haute performance. L'objectif était de marier une esthétique dynamique avec une structure de vente en ligne robuste et intuitive.",
 
         objectifs: [
@@ -192,6 +255,7 @@ const projets = [
         image: quiz_react_img, // N'oublie pas l'import de ton image (ex: capture d'écran du quiz)
         year: 2024,
         category: "Site Web",
+        technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Développée avec **React.js**, cette application de quiz interactive permet aux utilisateurs de tester leurs connaissances à travers une série de questions dynamiques. L'objectif était de créer une interface ludique avec un système de calcul de score en temps réel.",
 
         objectifs: [
@@ -209,6 +273,7 @@ const projets = [
         image: ecommerce_mode_figma_img, // Importe ton image de maquette (par exemple, un montage de plusieurs écrans)
         year: 2024,
         category: "Design",
+        technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Conçue intégralement sur **Figma**, cette maquette d'application mobile e-commerce réinvente l'expérience d'achat de prêt-à-porter sur smartphone. L'objectif était de créer une interface minimaliste, intuitive et hautement visuelle, favorisant la découverte de produits et un parcours d'achat sans friction.",
 
         objectifs: [
@@ -226,6 +291,7 @@ const projets = [
         image: stranger_things_maquette_img, // N'oublie pas l'import de ton image de maquette !
         year: 2024,
         category: "Design", // Super important : C'est une catégorie Design, pas Site Web
+        technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Conçue intégralement sur **Figma**, cette maquette haute fidélité propose une immersion totale dans l'univers de la série **Stranger Things**. L'objectif était de réinventer l'interface d'une plateforme de streaming classique pour capturer l'ambiance sombre et mystérieuse du Upside Down, tout en offrant une navigation fluide et centrée sur l'exploration de l'univers et de ses personnages.",
 
         objectifs: [
@@ -242,7 +308,8 @@ const projets = [
     title: "Narratix : Réseau Social d'Histoires & Back-Office Admin",
     image: narratix_mockup_img, // Importe une image montrant l'app mobile ET l'écran admin
     year: 2024,
-    category: "Full-Stack", // Une nouvelle catégorie pour marquer le coup !
+            category: "Full-Stack", // Une nouvelle catégorie pour marquer le coup !
+            technos: [skills.react, skills.javascript, skills.figma],
     introduction: "Narratix est un écosystème complet comprenant une application mobile de partage d'histoires (**React Native**) et une plateforme de gestion administrative (**React.js**). Ce projet explore la création de réseaux sociaux modernes et la gestion de données à grande échelle.",
 
     objectifs: [
@@ -259,7 +326,8 @@ const projets = [
     title: "FoodNow : Design d'Application de Livraison de Repas (Figma)",
     image: foodnow_figma_mockup_img, // N'oublie pas l'import de ton image de maquette !
     year: 2024,
-    category: "Design", // Catégorie Design UI/UX
+            category: "Design", // Catégorie Design UI/UX
+            technos: [skills.react, skills.javascript, skills.figma],
     introduction: "Conçue intégralement sur **Figma**, FoodNow est une maquette haute fidélité pour une application mobile de commande et de livraison de repas. L'objectif était de simplifier le parcours utilisateur, de la découverte de restaurants locaux à la validation de la commande, en passant par la personnalisation des plats.",
 
     objectifs: [
@@ -278,6 +346,7 @@ const projets = [
         image: inhouse_img, // N'oublie pas l'import de ton image de maquette !
         year: 2024,
         category: "SiteWeb", // Catégorie Design UI/UX
+        technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Ce projet est un site web e-commerce dédié aux **objets connectés**. Réalisé dans un cadre pédagogique, il simule une commande client réelle.",
 
         objectifs: [
