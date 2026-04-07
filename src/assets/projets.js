@@ -8,7 +8,7 @@ const skills = {
     photoshop: { name: "Photoshop", iconClass: "ri-palette-line" },
     wordpress: { name: "WordPress", iconClass: "ri-wordpress-fill" },
     elementor: { name: "Elementor", iconClass: "ri-tools-fill" },
-    figma: { name: "Figma", iconClass: "ri-figma-line" },
+    figma: { name: "Figma", iconClass: "fa-brands fa-figma" },
     react: { name: "React", iconClass: "ri-reactjs-fill" },
     javascript: { name: "JavaScript", iconClass: "ri-javascript-fill" },
     bootstrap: { name: "Bootstrap", iconClass: "ri-bootstrap-fill" },
@@ -115,6 +115,7 @@ const projets = [
         image: dyslogie_img, // N'oublie pas l'import de ton image
         year: 2023,
         category: "Site Web",
+        technos: [skills.react, skills.javascript, skills.html5, skills.css3],
         introduction: "Développée avec **React.js**, Dyslogie est une plateforme solidaire conçue pour orienter les personnes souffrant de troubles de l'apprentissage vers des outils numériques adaptés. L'objectif est de transformer l'éducation et le travail en une expérience inclusive et plaisante.",
 
         objectifs: [
@@ -151,7 +152,7 @@ const projets = [
         image: digital_school_img, // N'oublie pas l'import de ton fichier Photoshop exporté en .jpg
         year: 2021,
         category: "Design",
-        technos: [skills.react, skills.javascript, skills.figma],
+        technos: [skills.photoshop],
         introduction: "Réalisé lors d'un stage chez **Digital School France**, ce projet consistait à concevoir l'interface utilisateur (UI) d'une plateforme d'emploi et de formation. L'enjeu était de créer une expérience fluide, inspirée des standards de **France Travail**, pour faciliter l'accès aux ressources numériques.",
 
         objectifs: [
@@ -169,7 +170,7 @@ const projets = [
         image: dice_roller_img, // Une capture d'écran du simulateur mobile ou d'un téléphone
         year: 2023,
         category: "Application Mobile", // Nouvelle catégorie !
-        technos: [skills.react, skills.javascript, skills.figma],
+        technos: [skills.react, skills.html5, skills.css3],
         introduction: "Développée avec **React Native**, cette application mobile permet de simuler des lancés de dés avec une expérience utilisateur fluide et tactile. Ce projet m'a permis d'explorer le développement mobile natif et la gestion des composants spécifiques aux smartphones.",
 
         objectifs: [
@@ -187,7 +188,7 @@ const projets = [
         image: sois_verite_img, // N'oublie pas l'import de ton image mockup !
         year: 2021,
         category: "Site Web",
-        technos: [skills.react, skills.javascript, skills.figma],
+        technos: [skills.wordpress, skills.elementor],
         introduction: "Conçu avec le CMS **WordPress**, ce blog est une plateforme dédiée à la cuisine saine et au partage de recettes inspirantes. L'objectif était de créer un espace visuel gourmand et apaisant, permettant une gestion simplifiée des articles tout en offrant une expérience de lecture optimale.",
 
         objectifs: [
@@ -205,7 +206,7 @@ const projets = [
         image: rize_img, // N'oublie pas l'import de ton image !
         year: 2025,
         category: "Site Web",
-        technos: [skills.react, skills.javascript, skills.figma],
+        technos: [skills.wordpress, skills.elementor, skills.html5, skills.css3],
         introduction: "Propulsé par **WordPress** et conçu avec le constructeur de pages **Elementor**, Rize est une plateforme e-commerce dédiée aux équipements sportifs de haute performance. L'objectif était de marier une esthétique dynamique avec une structure de vente en ligne robuste et intuitive.",
 
         objectifs: [
@@ -223,7 +224,7 @@ const projets = [
         image: quiz_react_img, // N'oublie pas l'import de ton image (ex: capture d'écran du quiz)
         year: 2023,
         category: "Site Web",
-        technos: [skills.react, skills.javascript, skills.figma],
+        technos: [skills.react, skills.javascript, skills.html5, skills.css3],
         introduction: "Développée avec **React.js**, cette application de quiz interactive permet aux utilisateurs de tester leurs connaissances à travers une série de questions dynamiques. L'objectif était de créer une interface ludique avec un système de calcul de score en temps réel.",
 
         objectifs: [
