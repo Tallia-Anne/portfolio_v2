@@ -1,61 +1,17 @@
-.technoContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-  background-color: #f9f9f9; /* Fond très léger */
-  border: 1px solid #eeeeee;
-  border-radius: 12px;
-  width: 90px;
-  height: 95px;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  cursor: pointer;
+.card {
+background-color: black;
+width: 50px;
+height: 50px;
+border-radius: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
-/* Conteneur de l'image */
-.iconWrapper {
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
-}
-
-.icon {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  /* Ton style de base : gris et semi-transparent */
-  filter: grayscale(1) opacity(0.6);
-  transition: all 0.3s ease;
-}
-
-/* Texte sous l'icône */
-.techName {
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #555;
-  text-align: center;
-  white-space: nowrap;
-}
-
-/* --- EFFETS AU SURVOL --- */
-
-.technoContainer:hover {
-  background-color: #ffffff;
-  border-color: #d1d1d1;
-  transform: translateY(-5px); /* Petit saut vers le haut */
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
-}
-
-.technoContainer:hover .icon {
-  /* On remet la couleur et l'opacité au survol */
-  filter: grayscale(0) opacity(1);
-  transform: scale(1.1);
-}
-
-.technoContainer:hover .techName {
-  color: #000; /* Le texte devient plus noir */
+.card .iconBox i {
+ font-size: 30px;
+color: white;
+ display: "block";
 }

@@ -42,7 +42,7 @@ function SinglePost() {
       {/* Contenu détaillé */}
       <div className={singlepostCSS.singleContent}>
         {/* Objectifs - On vérifie si le tableau existe avant de mapper */}
-        <div className={singlepostCSS.SingleObj}>
+        <div className={singlepostCSS.Cont_inform}>
           <h4>Processus de création:</h4>
           {projet.objectifs && projet.objectifs.length > 0 ? (
             <div className={singlepostCSS.objectiflist}>
@@ -58,19 +58,28 @@ function SinglePost() {
         </div>
 
         {/* Description complète */}
-        <div className={singlepostCSS.SingleObj}>
-          <h4>Description:</h4>
-          <p className={singlepostCSS.descriptionText}>{projet.description}</p>
-        </div>
+        <div className={singlepostCSS.Cont_inform}>
+          <div className={singlepostCSS.descriptionText}>
+            <h4>Description:</h4>
+            <p>{projet.description}</p>
+          </div>
 
-        <div className={singlepostCSS.technoGrid}>
-          {projet.technos?.map(
-            (tech, index) =>
-              // On vérifie que 'tech' existe AVANT d'accéder à 'tech.name'
-              tech && (
-                <Card_techno key={index} name={tech.name} icon={tech.icon} />
-              ),
-          )}
+          <div className={singlepostCSS.outils}>
+            <h3>Outils et langages :</h3>
+            <div className={singlepostCSS.icones}>
+              {projet.technos?.map(
+                (tech, index) =>
+                  // On vérifie que tech existe pour éviter l'erreur "undefined"
+                  tech && (
+                    <Card_techno
+                      key={index}
+                      name={tech.name}
+                      iconClass={tech.iconClass} // On transmet la classe CSS (ex: ri-reactjs-fill)
+                    />
+                  ),
+              )}
+            </div>
+          </div>
         </div>
       </div>
 

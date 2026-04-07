@@ -2,54 +2,22 @@
 export const iconStyle = { filter: "grayscale(1) opacity(0.7)", width: "50px" };
 
 
-const skills = [
-    { name: "Canva", brand: "Canva", icon: "canva" },
-    {
-        name: "Photoshop",
-        brand: "Adobe",
-        software: "Photoshop",
-        icon: "adobe-photoshop",
-    },
-    {
-        name: "WordPress",
-        brand: "WordPress",
-            icon: "wordpress"
-    },
-    {
-        name: "Elementor",
-        brand: "Elementor",
-        software: "Web Builder",
-        icon: "elementor",
-    },
-    { name: "Figma", brand: "Figma", icon: "figma" },
-    {
-        name: "React",
-        brand: "React",
-        software: "JS Library",
-        icon: "react-native",
-    },
-    { name: "JavaScript", brand: "JavaScript", icon: "javascript" },
-    {
-        name: "Bootstrap",
-        brand: "Bootstrap",
-        software: "CSS Framework",
-        icon: "bootstrap",
-    },
-    {
-        name: "GitHub",
-        brand: "GitHub",
-        software: "Version Control",
-        icon: "github",
-    },
-    { name: "Vercel", brand: "Vercel", software: "Deployment", icon: "vercel" },
-    {
-        name: "Postman",
-        brand: "Postman",
-        software: "API Testing",
-        icon: "postman--v1",
-    },
-];
-// techIcons.js
+// REMPLACE LES [ ] PAR DES { }
+const skills = {
+    canva: { name: "Canva", iconClass: "ri-layout-grid-line" },
+    photoshop: { name: "Photoshop", iconClass: "ri-palette-line" },
+    wordpress: { name: "WordPress", iconClass: "ri-wordpress-fill" },
+    elementor: { name: "Elementor", iconClass: "ri-tools-fill" },
+    figma: { name: "Figma", iconClass: "ri-figma-line" },
+    react: { name: "React", iconClass: "ri-reactjs-fill" },
+    javascript: { name: "JavaScript", iconClass: "ri-javascript-fill" },
+    bootstrap: { name: "Bootstrap", iconClass: "ri-bootstrap-fill" },
+    github: { name: "GitHub", iconClass: "ri-github-fill" },
+    vercel: { name: "Vercel", iconClass: "ri-vercel-line" },
+    html5: { name: "HTML5", iconClass: "ri-html5-line" },
+    css3: { name: "CSS3", iconClass: "ri-css3-line" },
+
+};
 
 
 
@@ -76,9 +44,9 @@ const projets = [
         id: 1,
         title: "Unis-Cité",
         image: uniscit,
-        year: 2024,
+        year: 2025,
         introduction: "Dans le cadre d'une mission de Service Civique, j'ai participé à la création d'un support pédagogique innovant : un jeu de plateau interactif. Ce projet vise à transformer l'apprentissage des valeurs citoyennes en une expérience ludique et immersive, capable de captiver un public jeune et de favoriser le dialogue.",
-        technos: [skills.react, skills.javascript, skills.figma],
+        technos: [skills.react, skills.javascript, skills.vercel, skills.html5, skills.css3],
         objectifs: [
             "Développer la cohésion d'équipe et la communication interpersonnelle.",
             "Sensibiliser aux enjeux de la citoyenneté et de la solidarité par le jeu.",
@@ -92,8 +60,8 @@ const projets = [
         id: 2, // Assure-toi que l'ID est unique (ex: 2)
         title: "FreshComesty : E-commerce Cosmétique",
         image: freshcomesty_img, // Vérifie que tu as bien importé l'image en haut du fichier
-        year: 2024,
-        technos: [skills.react, skills.javascript, skills.figma],
+        year: 2025,
+        technos: [skills.react, skills.javascript, skills.css3 , skills.html5],
         introduction: "FreshComesty est une plateforme de vente en ligne dédiée à la cosmétique haut de gamme. Ce projet vise à offrir une expérience utilisateur fluide et élégante, permettant aux clients de découvrir et d'acquérir des produits de soin sélectionnés pour leur efficacité et leur composition naturelle.",
 
         objectifs: [
@@ -109,9 +77,9 @@ const projets = [
         id: 3, // Assure-toi que l'ID est bien à 3
         title: "YouTube Music : Redesign d'Expérience Mobile",
         image: youtubemusic_img, // N'oublie pas l'import de ton image mockup !
-        year: 2024,
+        year: 2023,
         category: "Design",
-        technos: [skills.react, skills.javascript, skills.figma],
+        technos: [skills.figma],
         introduction: "Ce projet explore une refonte complète de l'interface mobile de YouTube Music. L'objectif était de repenser l'ergonomie de l'application pour offrir une navigation plus intuitive et visuelle, tout en respectant l'identité forte de la marque Google et les besoins des mélomanes modernes.",
 
         objectifs: [
@@ -127,9 +95,9 @@ const projets = [
         id: 4,
         title: "Harry Potter : Encyclopédie Interactive & Fan-Blog",
         image: harrypotter_img,
-        year: 2024,
+        year: 2023,
         category: "Site Web",
-        technos: [skills.react, skills.javascript, skills.figma],
+        technos: [skills.react, skills.javascript, skills.html5, skills.css3],
         introduction: "Ce projet est une plateforme immersive dédiée à l'univers d'Harry Potter, développée avec **React.js**. Conçu comme une bibliothèque numérique, le site permet aux fans de consulter une base de données complète sur les sortilèges et les ouvrages de la saga, tout en profitant d'un espace blog structuré.",
 
         objectifs: [
@@ -145,7 +113,7 @@ const projets = [
         id: 5,
         title: "Dyslogie : Plateforme d'Accompagnement aux Troubles DYS",
         image: dyslogie_img, // N'oublie pas l'import de ton image
-        year: 2024,
+        year: 2023,
         category: "Site Web",
         introduction: "Développée avec **React.js**, Dyslogie est une plateforme solidaire conçue pour orienter les personnes souffrant de troubles de l'apprentissage vers des outils numériques adaptés. L'objectif est de transformer l'éducation et le travail en une expérience inclusive et plaisante.",
 
@@ -163,7 +131,7 @@ const projets = [
         id: 6,
         title: "Portfolio V1 : Première Immersion Digitale",
         image: ancien_portfolio_img, // Importe la capture d'écran de ton ancien site
-        year: 2023,
+        year: 2024,
         category: "Site Web",
         technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Ce projet représente ma toute première vitrine professionnelle en ligne. Développé avec les bases fondamentales du web (**HTML5** et **CSS3**), ce portfolio avait pour mission de présenter mes premières créations graphiques et mes débuts en programmation.",
@@ -181,7 +149,7 @@ const projets = [
         id: 7,
         title: "Digital School France : Maquettes Institutionnelles (Style France Travail)",
         image: digital_school_img, // N'oublie pas l'import de ton fichier Photoshop exporté en .jpg
-        year: 2023,
+        year: 2021,
         category: "Design",
         technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Réalisé lors d'un stage chez **Digital School France**, ce projet consistait à concevoir l'interface utilisateur (UI) d'une plateforme d'emploi et de formation. L'enjeu était de créer une expérience fluide, inspirée des standards de **France Travail**, pour faciliter l'accès aux ressources numériques.",
@@ -199,7 +167,7 @@ const projets = [
         id: 8,
         title: "Dice Roller Mobile : Application de Simulation Native",
         image: dice_roller_img, // Une capture d'écran du simulateur mobile ou d'un téléphone
-        year: 2024,
+        year: 2023,
         category: "Application Mobile", // Nouvelle catégorie !
         technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Développée avec **React Native**, cette application mobile permet de simuler des lancés de dés avec une expérience utilisateur fluide et tactile. Ce projet m'a permis d'explorer le développement mobile natif et la gestion des composants spécifiques aux smartphones.",
@@ -217,7 +185,7 @@ const projets = [
         id: 9,
         title: "Sois ta propre vérité : Blog Culinaire & Bien-être",
         image: sois_verite_img, // N'oublie pas l'import de ton image mockup !
-        year: 2023,
+        year: 2021,
         category: "Site Web",
         technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Conçu avec le CMS **WordPress**, ce blog est une plateforme dédiée à la cuisine saine et au partage de recettes inspirantes. L'objectif était de créer un espace visuel gourmand et apaisant, permettant une gestion simplifiée des articles tout en offrant une expérience de lecture optimale.",
@@ -235,7 +203,7 @@ const projets = [
         id: 10,
         title: "Rize : Boutique E-commerce Performance & Sport",
         image: rize_img, // N'oublie pas l'import de ton image !
-        year: 2024,
+        year: 2025,
         category: "Site Web",
         technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Propulsé par **WordPress** et conçu avec le constructeur de pages **Elementor**, Rize est une plateforme e-commerce dédiée aux équipements sportifs de haute performance. L'objectif était de marier une esthétique dynamique avec une structure de vente en ligne robuste et intuitive.",
@@ -253,7 +221,7 @@ const projets = [
         id: 11,
         title: "Quiz Interactive : Application de Test de Connaissances",
         image: quiz_react_img, // N'oublie pas l'import de ton image (ex: capture d'écran du quiz)
-        year: 2024,
+        year: 2023,
         category: "Site Web",
         technos: [skills.react, skills.javascript, skills.figma],
         introduction: "Développée avec **React.js**, cette application de quiz interactive permet aux utilisateurs de tester leurs connaissances à travers une série de questions dynamiques. L'objectif était de créer une interface ludique avec un système de calcul de score en temps réel.",
@@ -273,7 +241,7 @@ const projets = [
         image: ecommerce_mode_figma_img, // Importe ton image de maquette (par exemple, un montage de plusieurs écrans)
         year: 2024,
         category: "Design",
-        technos: [skills.react, skills.javascript, skills.figma],
+        technos: [ skills.figma],
         introduction: "Conçue intégralement sur **Figma**, cette maquette d'application mobile e-commerce réinvente l'expérience d'achat de prêt-à-porter sur smartphone. L'objectif était de créer une interface minimaliste, intuitive et hautement visuelle, favorisant la découverte de produits et un parcours d'achat sans friction.",
 
         objectifs: [
@@ -289,9 +257,9 @@ const projets = [
         id: 13, // ID unique pour ce projet
         title: "Stranger Things : Plateforme de Streaming Thématique",
         image: stranger_things_maquette_img, // N'oublie pas l'import de ton image de maquette !
-        year: 2024,
+        year: 2023,
         category: "Design", // Super important : C'est une catégorie Design, pas Site Web
-        technos: [skills.react, skills.javascript, skills.figma],
+        technos:  [skills.figma],
         introduction: "Conçue intégralement sur **Figma**, cette maquette haute fidélité propose une immersion totale dans l'univers de la série **Stranger Things**. L'objectif était de réinventer l'interface d'une plateforme de streaming classique pour capturer l'ambiance sombre et mystérieuse du Upside Down, tout en offrant une navigation fluide et centrée sur l'exploration de l'univers et de ses personnages.",
 
         objectifs: [
@@ -327,7 +295,7 @@ const projets = [
     image: foodnow_figma_mockup_img, // N'oublie pas l'import de ton image de maquette !
     year: 2024,
             category: "Design", // Catégorie Design UI/UX
-            technos: [skills.react, skills.javascript, skills.figma],
+            technos: [skills.figma],
     introduction: "Conçue intégralement sur **Figma**, FoodNow est une maquette haute fidélité pour une application mobile de commande et de livraison de repas. L'objectif était de simplifier le parcours utilisateur, de la découverte de restaurants locaux à la validation de la commande, en passant par la personnalisation des plats.",
 
     objectifs: [
@@ -346,7 +314,7 @@ const projets = [
         image: inhouse_img, // N'oublie pas l'import de ton image de maquette !
         year: 2024,
         category: "SiteWeb", // Catégorie Design UI/UX
-        technos: [skills.react, skills.javascript, skills.figma],
+        technos: [skills.wordpress, skills.elementor],
         introduction: "Ce projet est un site web e-commerce dédié aux **objets connectés**. Réalisé dans un cadre pédagogique, il simule une commande client réelle.",
 
         objectifs: [

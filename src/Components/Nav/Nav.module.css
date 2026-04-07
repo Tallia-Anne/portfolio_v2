@@ -72,6 +72,9 @@ display: flex;
 align-items: center;
 gap: 12px;
 }
+.Nav_btns .social a { 
+text-decoration: none;
+}
 
 .Nav_btns .social i {
 color: #fff;

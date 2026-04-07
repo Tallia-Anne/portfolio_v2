@@ -17,6 +17,16 @@ align-items: center;
 width: 100%;
 height: 400px;
 gap: 22px;
+
+
+}
+
+.wrapperSingle .data p:nth-child(1) {
+color: rgb(0, 0, 0);
+font-size: 20px;
+font-weight: bolder;
+border: 1px solid black;
+
 }
 
 .wrapperSingle .data  h1 {
@@ -41,7 +51,8 @@ padding-bottom: 20px;
 }
 
 .wrapperSingle .imageSingle .box_image {
-width: 866px;
+
+width: calc(866px - 210px);
 height: 100%;
 object-fit: cover;
 object-position: center;
@@ -72,7 +83,7 @@ color: rgb(0, 0, 0);
 list-style: none;
 }
 
-.wrapperSingle .SingleObj {
+.wrapperSingle .Cont_inform {
 display: flex;
 justify-content: center;
 align-items: start;
@@ -82,8 +93,26 @@ gap: 12px;
 color: black;
 }
 
-.wrapperSingle .SingleObj .descriptionText {
+.wrapperSingle .Cont_inform .descriptionText p {
 color: black;
+}
+
+
+.wrapperSingle .Cont_inform .outils{
+display: flex;
+flex-direction: column;
+}
+
+.wrapperSingle .Cont_inform .outils h3{
+font-size: 30px;
+padding-bottom: 12px;
+}
+.wrapperSingle .Cont_inform .outils .icones{
+display: flex;
+flex-direction: row;
+gap: 12px;
+padding: 8px auto;
+flex-wrap: wrap;
 }
 
 .wrapperSingle .sectionPost {
@@ -119,6 +148,7 @@ flex-direction: column;
 gap: 15px;
 margin-left: 65px;
 }
+
 
 
 

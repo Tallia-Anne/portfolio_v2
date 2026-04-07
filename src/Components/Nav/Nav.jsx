@@ -37,8 +37,11 @@ function Nav() {
           <a href="">
             <i className="ri-instagram-fill"></i>
           </a>
-          <a href="">
-            <i className="ri-twitter-x-line"></i>
+          <a href="https://github.com/Tallia-Anne">
+            <i className="ri-github-fill"></i>
+          </a>
+          <a href="https://www.behance.net/erinawambiekele">
+            <i className="ri-behance-line"></i>
           </a>
         </div>
 

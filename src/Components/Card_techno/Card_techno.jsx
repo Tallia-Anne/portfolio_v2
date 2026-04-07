@@ -1,17 +1,20 @@
 import React from "react";
 import styles from "./Card_techno.module.css";
 
-// On reçoit "icon" (qui est juste le nom, ex: "react-native") depuis le parent
-function Card_techno({ name, icon }) {
- const iconCode = icon || "code";
- const iconUrl = `https://img.icons8.com/color/100/${iconCode}.png`;
-
+function Card_techno({ iconClass , name}) {
+  // Si iconClass est vide, on met 'ri-question-line' pour voir si quelque chose s'affiche
+  const finalClass = iconClass || "ri-question-line";
+  console.log("Composant Techno -> Nom:", name, "| Classe:", iconClass);
   return (
     <div className={styles.card}>
       <div className={styles.iconBox}>
-        <img src={iconUrl} alt={name} className={styles.logo} />
+        {/* On force une taille et une couleur pour le test */}
+        <i
+          className={finalClass}
+          
+        ></i>
       </div>
-      <span className={styles.name}>{name}</span>
+     
     </div>
   );
 }
