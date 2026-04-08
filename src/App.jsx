@@ -8,6 +8,7 @@ import Nav from "./Components/Nav/Nav";
  import Footer from "./Components/Footer/Footer";
 import SinglePost from "./Pages/Singlepost";
 import Abouts from "./Pages/Abouts";
+import Parallaxe from "./Components/Parallaxe/Parallaxe";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/propos" element={<Abouts/>} />
       </Routes>
       {/* 2. Le Footer doit être ici, en dehors de Routes */}
+      <Parallaxe/>     
       <Footer />
     </>
   );
