@@ -8,3 +8,18 @@ background-color: rgb(224, 177, 214);
 flex-direction: column;
 gap: 20px;
 }
+
+.container_Cv .btn  {
+background-color: purple;
+padding: 12px 12px;
+border-radius: 12px;
+width: 220px;
+height: 50px;
+border: none;
+color: white;
+box-shadow: 0px 10px 15px -3px rgba(205, 132, 229, 0.304);
+text-decoration: none;
+justify-content: center;
+display: flex;
+align-items: center;
+}

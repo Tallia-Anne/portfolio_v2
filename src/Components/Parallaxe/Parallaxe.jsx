@@ -1,6 +1,6 @@
-import parallaxeCss from './Parallaxe.module.css'
-import Buttons from '../Buttons/Buttons'
-import Cv from '../../assets/images/Cv (3).pdf'
+import parallaxeCss from './Parallaxe.module.css';
+import Buttons from '../Buttons/Buttons';
+import Cv from "../../assets/Cv.pdf";;
 
 function Parallaxe() {
   return (
@@ -8,8 +8,8 @@ function Parallaxe() {
       <h3>Mon parcours vous intéresse ?</h3>
       <p>Consultez mon profil complet en téléchargeant mon curriculum vitae.</p>
 
-      <a href={Cv} download="CV_Tallia.pdf">
-        <Buttons name="Télécharger mon Cv" />
+      <a className={parallaxeCss.btn} href={Cv} download="CV_Tallia.pdf">
+        <span>Télécharger mon Cv</span> 
       </a>
     </div>
   );
