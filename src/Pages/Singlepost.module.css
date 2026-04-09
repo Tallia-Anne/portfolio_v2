@@ -3,6 +3,10 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 }
+.nav_wrapper {
+background-color: rgb(235, 194, 235);
+}
+
 .wrapperSingle{
 width: 100%;
 background-color: #f9f9f9;

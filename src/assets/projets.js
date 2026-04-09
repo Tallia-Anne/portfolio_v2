@@ -53,6 +53,7 @@ const projets = [
             "Stimuler la réflexion stratégique et la prise de décision collective.",
             "Encourager la résolution créative de problèmes face à des scénarios dynamiques."
         ],
+        lien: 'https://uniscit.vercel.app/',
 
         description: "Ce projet consistait à concevoir un outil de médiation ludique complet. De la réflexion sur les mécaniques de jeu à la création visuelle du plateau et des cartes, chaque élément a été pensé pour maximiser l'engagement des participants. Utilisé lors d'ateliers de sensibilisation, ce jeu permet d'aborder des sujets complexes (solidarité, environnement, vivre-ensemble) de manière accessible et participative. C'est un parfait exemple de la fusion entre design graphique, pédagogie active et travail d'équipe.",
     },
@@ -70,7 +71,7 @@ const projets = [
             "Mettre en avant l'identité visuelle de la marque à travers un design graphique fort.",
             "Développer des fonctionnalités e-commerce essentielles (catalogue, panier, fiches produits)."
         ],
-
+        lien: 'https://commerce-five-xi-70.vercel.app/',
         description: "Le projet FreshComesty consistait à créer un site web complet qui allie esthétique et performance technique. En me concentrant sur la psychologie des couleurs et l'ergonomie, j'ai développé une plateforme où chaque produit est mis en valeur de manière exclusive. L'accent a été mis sur la clarté de l'information et la rapidité de navigation, essentielles pour convertir les visiteurs en clients fidèles. C'est une réalisation qui démontre mes compétences en développement front-end et en web design orienté vers le secteur de la beauté.",
     },
     {
@@ -80,6 +81,7 @@ const projets = [
         year: 2023,
         category: "Design",
         technos: [skills.figma],
+        lien: 'https://www.behance.net/gallery/141731711/Youtube-premium',
         introduction: "Ce projet explore une refonte complète de l'interface mobile de YouTube Music. L'objectif était de repenser l'ergonomie de l'application pour offrir une navigation plus intuitive et visuelle, tout en respectant l'identité forte de la marque Google et les besoins des mélomanes modernes.",
 
         objectifs: [
@@ -97,6 +99,7 @@ const projets = [
         image: harrypotter_img,
         year: 2023,
         category: "Site Web",
+        lien:'https://harrypottertallia.netlify.app/',
         technos: [skills.react, skills.javascript, skills.html5, skills.css3],
         introduction: "Ce projet est une plateforme immersive dédiée à l'univers d'Harry Potter, développée avec **React.js**. Conçu comme une bibliothèque numérique, le site permet aux fans de consulter une base de données complète sur les sortilèges et les ouvrages de la saga, tout en profitant d'un espace blog structuré.",
 
@@ -116,6 +119,7 @@ const projets = [
         year: 2023,
         category: "Site Web",
         technos: [skills.react, skills.javascript, skills.html5, skills.css3],
+        lien: '',
         introduction: "Développée avec **React.js**, Dyslogie est une plateforme solidaire conçue pour orienter les personnes souffrant de troubles de l'apprentissage vers des outils numériques adaptés. L'objectif est de transformer l'éducation et le travail en une expérience inclusive et plaisante.",
 
         objectifs: [
@@ -135,6 +139,7 @@ const projets = [
         year: 2024,
         category: "Site Web",
         technos: [skills.react, skills.javascript, skills.figma],
+        lien: 'portfoliotallia.vercel.app',
         introduction: "Ce projet représente ma toute première vitrine professionnelle en ligne. Développé avec les bases fondamentales du web (**HTML5** et **CSS3**), ce portfolio avait pour mission de présenter mes premières créations graphiques et mes débuts en programmation.",
 
         objectifs: [
@@ -208,7 +213,7 @@ const projets = [
         category: "Site Web",
         technos: [skills.wordpress, skills.elementor, skills.html5, skills.css3],
         introduction: "Propulsé par **WordPress** et conçu avec le constructeur de pages **Elementor**, Rize est une plateforme e-commerce dédiée aux équipements sportifs de haute performance. L'objectif était de marier une esthétique dynamique avec une structure de vente en ligne robuste et intuitive.",
-
+        lien: 'https://www.behance.net/gallery/207696331/RIZE-4-U',
         objectifs: [
             "Concevoir un design personnalisé et dynamique en utilisant les fonctionnalités avancées d'**Elementor Pro**.",
             "Intégrer et configurer **WooCommerce** pour la gestion complète du catalogue produits et du tunnel d'achat.",
@@ -225,6 +230,7 @@ const projets = [
         year: 2023,
         category: "Site Web",
         technos: [skills.react, skills.javascript, skills.html5, skills.css3],
+        lien: 'https://quizreact-gamma.vercel.app/',
         introduction: "Développée avec **React.js**, cette application de quiz interactive permet aux utilisateurs de tester leurs connaissances à travers une série de questions dynamiques. L'objectif était de créer une interface ludique avec un système de calcul de score en temps réel.",
 
         objectifs: [
@@ -242,7 +248,8 @@ const projets = [
         image: ecommerce_mode_figma_img, // Importe ton image de maquette (par exemple, un montage de plusieurs écrans)
         year: 2024,
         category: "Design",
-        technos: [ skills.figma],
+        technos: [skills.figma],
+        lien: 'https://www.behance.net/gallery/168339867/e-commerce',
         introduction: "Conçue intégralement sur **Figma**, cette maquette d'application mobile e-commerce réinvente l'expérience d'achat de prêt-à-porter sur smartphone. L'objectif était de créer une interface minimaliste, intuitive et hautement visuelle, favorisant la découverte de produits et un parcours d'achat sans friction.",
 
         objectifs: [
@@ -262,7 +269,7 @@ const projets = [
         category: "Design", // Super important : C'est une catégorie Design, pas Site Web
         technos:  [skills.figma],
         introduction: "Conçue intégralement sur **Figma**, cette maquette haute fidélité propose une immersion totale dans l'univers de la série **Stranger Things**. L'objectif était de réinventer l'interface d'une plateforme de streaming classique pour capturer l'ambiance sombre et mystérieuse du Upside Down, tout en offrant une navigation fluide et centrée sur l'exploration de l'univers et de ses personnages.",
-
+        lien: 'https://www.behance.net/gallery/145297433/Stranger-thing-App-maquettes',
         objectifs: [
             "Réaliser une identité visuelle thématique forte, inspirée des années 80 et de l'esthétique Duffer Brothers.",
             "Hiérarchiser le contenu pour présenter les personnages, les lieux clés et les différents chapitres de la saga.",
@@ -324,7 +331,7 @@ const projets = [
             "Optimiser l'expérience utilisateur (UX) pour le catalogue.",
             "Garantir un rendu 100% Responsive."
         ],
-
+        lien: 'https://www.behance.net/gallery/191073203/InHouse',
         description: "Le projet Inhouse se concentre sur la création d'une boutique en ligne moderne et épurée. J'ai dû paramétrer chaque section pour refléter l'aspect 'high-tech' des objets connectés.",
     },
 ];

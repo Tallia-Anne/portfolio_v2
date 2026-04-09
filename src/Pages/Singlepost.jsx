@@ -34,9 +34,11 @@ function SinglePost() {
 
       {/* Image principale */}
       <div className={singlepostCSS.imageSingle}>
-        <div className={singlepostCSS.box_image}>
-          <img src={projet.image} alt={projet.title} />
-        </div>
+        <Link to={projet.lien} >
+          <div className={singlepostCSS.box_image}>
+            <img src={projet.image} alt={projet.title} />
+          </div>
+        </Link>
       </div>
 
       {/* Contenu détaillé */}
